@@ -1,0 +1,10 @@
+#!/bin/sh
+# Squeakvm wrapper to load Scratch image.
+#------------------------------------------------------------
+
+/usr/bin/s4a_squeak_vm \
+-plugins /usr/lib/s4a/Plugins \
+-vm-sound-pulse \
+/usr/lib/s4a/S4A.image "${@}"
+
+
